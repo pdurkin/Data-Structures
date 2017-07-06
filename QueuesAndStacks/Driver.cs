@@ -13,7 +13,9 @@ namespace QueueAndStackArrays
             Console.ReadLine();
 
             GenericQueue<int> queue = new GenericQueue<int>(3);
+            GenericStack<int> stack = new GenericStack<int>(4);
 
+            /*
             queue.enqueue(3);
             queue.enqueue(6);
             queue.enqueue(2);
@@ -44,6 +46,16 @@ namespace QueueAndStackArrays
             Console.WriteLine(queue.dequeue());
 
             queue.enqueue(19);
+            */
+
+            stack.push(4);
+            stack.push(19);
+            stack.push(8);
+
+            Console.WriteLine("Stack is full? " + stack.isFull().ToString());
+            Console.WriteLine(stack.pop());
+            Console.WriteLine(stack.pop());
+            Console.WriteLine(stack.pop());
 
             Console.ReadLine();
         }

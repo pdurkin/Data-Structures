@@ -58,7 +58,7 @@ namespace QueueAndStackArrays
             if (isEmpty())
             {
                 Console.WriteLine("Cannot dequeue, the queue is empty!");
-                return default(T);
+                return default(T); //maybe throw underflow exception instead?
             }
             else
             {
@@ -96,8 +96,5 @@ namespace QueueAndStackArrays
             if (currentSize == 0) return true;
             else return false;
         }
-
-
-
     }
 }
